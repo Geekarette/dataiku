@@ -1,9 +1,9 @@
-# Use admin/admin as user/password credentials
 version: '3.1'
 
 services:
- 
- dataiku:
-   image: dataiku/dss
-   ports:
-     - 10000:10000
+
+  dataiku:
+    image: dataiku/dss
+    restart: always
+    ports:
+      - 10000:10000
